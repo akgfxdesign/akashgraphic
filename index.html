@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Social Media Post Design Service | ₹300 Only</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, #FF7E5F, #FEB47B);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+        
+        .tagline {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 24px;
+            position: absolute;
+            right: 15px;
+            top: 15px;
+        }
+        
+        /* Hero Section */
+        .hero {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px 0;
+        }
+        
+        .hero-content {
+            flex: 1;
+            min-width: 300px;
+            padding: 15px;
+        }
+        
+        .hero-image {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+            padding: 15px;
+        }
+        
+        .hero-image img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        
+        .highlight {
+            color: #FF7E5F;
+            font-weight: 700;
+        }
+        
+        .price {
+            font-size: 24px;
+            font-weight: 700;
+            color: #FF7E5F;
+            margin: 15px 0;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #FF7E5F, #FEB47B);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 16px;
+            margin-top: 15px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(255, 126, 95, 0.3);
+        }
+        
+        /* Features Section */
+        .features {
+            background-color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        .features h2 {
+            font-size: 28px;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .feature-card {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .feature-icon {
+            font-size: 32px;
+            margin-bottom: 15px;
+            color: #FF7E5F;
+        }
+        
+        .feature-card h3 {
+            margin-bottom: 10px;
+            color: #333;
+            font-size: 18px;
+        }
+        
+        .feature-card p {
+            font-size: 14px;
+        }
+        
+        /* Portfolio Section */
+        .portfolio {
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        .portfolio h2 {
+            font-size: 28px;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .portfolio-item {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+        }
+        
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        /* Offer Section */
+        .offer {
+            background: linear-gradient(135deg, #6B73FF, #000DFF);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        .offer h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+        
+        .offer p {
+            font-size: 16px;
+            margin-bottom: 20px;
+            max-width: 100%;
+            padding: 0 15px;
+        }
+        
+        .offer-badge {
+            background-color: #FFD700;
+            color: #333;
+            display: inline-block;
+            padding: 8px 15px;
+            border-radius: 50px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            padding: 40px 0;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+        
+        .testimonials h2 {
+            font-size: 28px;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        
+        .testimonial-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+        
+        .testimonial-author {
+            font-weight: 700;
+            color: #FF7E5F;
+            font-size: 14px;
+        }
+        
+        /* FAQ Section */
+        .faq {
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        .faq h2 {
+            font-size: 28px;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        
+        .faq-item {
+            margin-bottom: 15px;
+            text-align: left;
+            max-width: 100%;
+            padding: 0 15px;
+        }
+        
+        .faq-question {
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #FF7E5F;
+            font-size: 16px;
+        }
+        
+        .faq-item p {
+            font-size: 14px;
+        }
+        
+        /* CTA Section */
+        .final-cta {
+            background: linear-gradient(135deg, #FF7E5F, #FEB47B);
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+        }
+        
+        .final-cta h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+        
+        .final-cta p {
+            font-size: 16px;
+            margin-bottom: 20px;
+            max-width: 100%;
+            padding: 0 15px;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        
+        .footer-links a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        
+        .contact-info {
+            margin-top: 15px;
+        }
+        
+        .contact-info p {
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+        
+        /* Mobile Menu */
+        .mobile-menu {
+            display: none;
+            background-color: #333;
+            padding: 15px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1000;
+            overflow-y: auto;
+        }
+        
+        .mobile-menu.active {
+            display: block;
+        }
+        
+        .mobile-menu-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .mobile-menu-close {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 24px;
+        }
+        
+        .mobile-menu-links {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .mobile-menu-links a {
+            color: white;
+            padding: 12px 0;
+            text-decoration: none;
+            border-bottom: 1px solid #555;
+        }
+        
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 20px;
+            }
+            
+            .tagline {
+                font-size: 14px;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+            
+            .price {
+                font-size: 20px;
+            }
+            
+            .cta-button {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+            
+            .features h2,
+            .portfolio h2,
+            .offer h2,
+            .testimonials h2,
+            .faq h2,
+            .final-cta h2 {
+                font-size: 24px;
+            }
+            
+            .feature-card {
+                padding: 15px;
+            }
+            
+            .feature-icon {
+                font-size: 28px;
+            }
+            
+            .feature-card h3 {
+                font-size: 16px;
+            }
+            
+            .testimonial-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero {
+                flex-direction: column;
+            }
+            
+            .hero-content,
+            .hero-image {
+                flex: none;
+                width: 100%;
+                padding: 10px;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .portfolio-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            
+            .footer-links {
+                flex-direction: column;
+            }
+            
+            .footer-links a {
+                margin: 5px 0;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="logo">Akash Graphics Designs</div>
+            <div class="tagline">Professional Social Media Designs That Convert</div>
+        </div>
+    </header>
+    
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="container">
+            <div class="mobile-menu-header">
+                <div class="logo">Creative Design Studio</div>
+                <button class="mobile-menu-close" id="mobileMenuClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="mobile-menu-links">
+                <a href="#portfolio">Our Work</a>
+                <a href="#features">Features</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#faq">FAQ</a>
+                <a href="#order">Order Now</a>
+            </div>
+        </div>
+    </div>
+    
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>High-Quality <span class="highlight">Social Media Posts</span> Designed For Your Brand</h1>
+                <p>Get eye-catching, professional social media posts designed specifically for your business. Perfect for Instagram, Facebook, LinkedIn and more.</p>
+                
+                <div class="price">Only ₹300 per post!</div>
+                
+                <p>Limited time offer - First 10 clients get 2 posts for the price of 1!</p>
+                
+                <a href="#order" class="cta-button">Order Now</a>
+            </div>
+            
+        </div>
+    </section>
+    
+    <section class="features" id="features">
+        <div class="container">
+            <h2>Why Choose Our Design Service?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+                    <h3>Fast Turnaround</h3>
+                    <p>Get your designs delivered within 24-48 hours. We understand social media moves fast!</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-paint-brush"></i></div>
+                    <h3>Custom Designs</h3>
+                    <p>Every post is custom made for your brand, not generic templates.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-infinity"></i></div>
+                    <h3>Unlimited Revisions</h3>
+                    <p>Not satisfied? We'll revise your design until you love it.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>Optimized for Social</h3>
+                    <p>Perfectly sized for each platform with mobile-first design.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <h2>Our Recent Work</h2>
+            <p>Check out some of our recent social media post designs</p>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="the_page_src2.png" alt="Sample Design 1">
+                </div>
+                <div class="portfolio-item">
+                    <img src="the_page_src1.png" alt="Sample Design 2">
+                </div>
+                <div class="portfolio-item">
+                    <img src="the_page_src3.png" alt="Sample Design 3">
+                </div>
+                <div class="portfolio-item">
+                    <img src="the_page_src4.png" alt="Sample Design 4">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="offer">
+        <div class="container">
+            <div class="offer-badge">Special Limited Offer</div>
+            <h2>Get 5 Social Media Posts For ₹1275</h2>
+            <p>That's 25% off our regular price! Offer valid for the first 20 customers only.</p>
+            <a href="#order" class="cta-button">Claim This Offer</a>
+        </div>
+    </section>
+    
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "The designs I received were exactly what I needed for my Instagram. They perfectly captured my brand's aesthetic and helped increase my engagement by 40%!"
+                    </div>
+                    <div class="testimonial-author">- Priya K., Fashion Blogger</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "As a small business owner, I don't have time to create professional posts. This service has been a game-changer for our social media presence."
+                    </div>
+                    <div class="testimonial-author">- Rohan M., Restaurant Owner</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "Fast, affordable, and high-quality designs. I've ordered multiple times and will continue to use this service for all my social media needs."
+                    </div>
+                    <div class="testimonial-author">- Ananya S., Life Coach</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question"> Is ₹300 really worth it?</div>
+                <p>Absolutely! You're getting a custom, branded design optimized for engagement – not just a generic template. It’s built for performance, not just looks.</p>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">How fast will I get my design?</div>
+                <p>I usually deliver within 24-48 hours depending on the request. Urgent delivery? Just ask!</p>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">What social media platforms do you design for?</div>
+                <p>We design for all major platforms including Instagram (posts, stories), Facebook, LinkedIn, Twitter, and Pinterest. Just let us know where you'll be posting.</p>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Do you offer bulk discounts?</div>
+                <p>Yes! If you order 5+ posts at once, we offer 15% off. For 10+ posts, we offer 25% off. Contact us for custom pricing on large orders.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="final-cta" id="order">
+        <div class="container">
+            <h2>Ready to Elevate Your Social Media Presence?</h2>
+            <p>Get professional, eye-catching social media posts designed specifically for your brand at an affordable price.</p>
+            <a href="https://wa.me/919699712082?text=I%20want%20to%20order%20social%20media%20post%20design" class="cta-button">Order Now on WhatsApp</a>
+            <p style="margin-top: 20px;">Or email us at: akashgraphicdesigns@gmail.com</p>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="#portfolio">Our Work</a>
+                <a href="#features">Features</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#faq">FAQ</a>
+                <a href="#order">Order Now</a>
+            </div>
+            
+            <div class="contact-info">
+                <p>Instagram DM: @designby_akash</p>
+                <p>Email: akashgraphicdesigns@gmail.com</p>
+                <p>© 2023 Creative Design Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenuClose = document.getElementById('mobileMenuClose');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+        
+        mobileMenuClose.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+        
+        // Close menu when clicking on a link
+        const mobileMenuLinks = document.querySelectorAll('.mobile-menu-links a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 20,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
